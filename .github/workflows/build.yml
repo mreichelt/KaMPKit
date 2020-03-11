@@ -24,7 +24,7 @@ jobs:
         key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle.kts') }}
         restore-keys: |
           ${{ runner.os }}-gradle-
-      
+
     # Builds kotlin project and runs unit tests
     - name: Run unit tests
       run: ./gradlew build check
